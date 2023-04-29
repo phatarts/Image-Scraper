@@ -1,0 +1,13 @@
+function scrapePage() {
+  // Select all images on the page
+  const images = document.querySelectorAll('img');
+
+  // Select all text on the page
+  const text = document.body.innerText;
+
+  // Combine the images and text into a single string
+  const data = images + '\n\n' + text;
+
+  // Open a new window and display the scraped data
+  window.open().document.write('<pre>' + data + '</pre>');
+}
